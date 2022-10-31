@@ -7,6 +7,7 @@ import { BankComponent } from './bank/bank.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CarsComponent } from './cars/cars.component';
 import { CartComponent } from './cart/cart.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateaccountComponent } from './createaccount/createaccount.component';
 
@@ -56,7 +57,8 @@ const routes: Routes = [
     {path: 'vehicle-details/:id',component:VehicleDetailsComponent},
     {path: 'create-vehicle',component:CreateVehicleComponent,canDeactivate:[NotifyGuard]},
     {path: 'bank-detais/:id',component:BankDetailsComponent},
-    {path: 'createaccount',component:CreateaccountComponent}
+    {path: 'createaccount',component:CreateaccountComponent},
+    {path: 'create-user',component:CreateUserComponent}
     
     
   ]},
