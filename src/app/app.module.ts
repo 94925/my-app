@@ -33,6 +33,8 @@ import { PostComponent } from './post/post.component';
 import { MailComponent } from './mail/mail.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { BankDetailsComponent } from './bank-details/bank-details.component';
+import { CreateaccountComponent } from './createaccount/createaccount.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,9 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
     PostComponent,
     MailComponent,
     VehicleDetailsComponent,
-    CreateVehicleComponent
+    CreateVehicleComponent,
+    BankDetailsComponent,
+    CreateaccountComponent
   ],
   imports: [
     BrowserModule,

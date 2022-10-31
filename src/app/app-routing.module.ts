@@ -2,11 +2,13 @@ import { Interpolation } from '@angular/compiler';
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
+import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { BankComponent } from './bank/bank.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CarsComponent } from './cars/cars.component';
 import { CartComponent } from './cart/cart.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateaccountComponent } from './createaccount/createaccount.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmoloyeeregistrationComponent } from './emoloyeeregistration/emoloyeeregistration.component';
@@ -52,7 +54,9 @@ const routes: Routes = [
     {path: 'post',component:PostComponent},
     {path: 'mail',component:MailComponent},
     {path: 'vehicle-details/:id',component:VehicleDetailsComponent},
-    {path: 'create-vehicle',component:CreateVehicleComponent,canDeactivate:[NotifyGuard]}
+    {path: 'create-vehicle',component:CreateVehicleComponent,canDeactivate:[NotifyGuard]},
+    {path: 'bank-detais/:id',component:BankDetailsComponent},
+    {path: 'createaccount',component:CreateaccountComponent}
     
     
   ]},

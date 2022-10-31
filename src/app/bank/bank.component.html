@@ -1,6 +1,22 @@
   <input type="text" placeholder="search" [(ngModel)]="term">
   <button (click)="filter()">filter</button>
 <br>
+<select [(ngModel)]="column">
+    <option>createdAt</option>
+    <option>account_name</option>
+    <option>available_balance
+    </option>
+    <option>currency/option>
+    <option>account_number</option>
+    <option>id</option>
+ </select>
+
+ <select [(ngModel)]="order">
+    <option>asc</option>
+    <option>desc</option>
+ </select>
+ <button (click)="sort()">sort</button>
+
 <table class="table table-dark">
     <thead>
 
@@ -17,6 +33,12 @@
                 
             <td>{{account.account_number}}</td>
             <td>{{account.id}}</td>
+
+            <td>
+                <button (click)="view(account.id)" class="btn btn-primary">view</button>
+
+                <button (click)="delete(account.id)" class="btn btn-danger">Delete</button>
+            </td>
         </tr>
     </tbody>
 </table>

@@ -8,6 +8,7 @@
     <option>type</option>
     <option>fuel</option>
     <option>color</option>
+    <option>id</option>
  </select>
 
  <select [(ngModel)]="order">
@@ -18,7 +19,17 @@
  <button (click)="sort()">sort</button>
 
 <table class="table table-dark">
-    <thead>
+    <thead >
+      <tr >
+        <th>vehicles</th>
+        <th>manufacturer</th>
+        <th>model</th>
+        <th>type</th>
+        <th>image</th>
+        <th>fuel</th>
+        <th>color</th>
+        <th>id</th>
+      </tr>
 
     </thead>
     <tbody>
