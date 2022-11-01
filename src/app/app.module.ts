@@ -37,6 +37,7 @@ import { BankDetailsComponent } from './bank-details/bank-details.component';
 import { CreateaccountComponent } from './createaccount/createaccount.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,7 +71,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
     CreateVehicleComponent,
     BankDetailsComponent,
     CreateaccountComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    
   ],
   imports: [
     BrowserModule,

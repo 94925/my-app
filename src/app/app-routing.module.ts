@@ -58,7 +58,8 @@ const routes: Routes = [
     {path: 'create-vehicle',component:CreateVehicleComponent,canDeactivate:[NotifyGuard]},
     {path: 'bank-detais/:id',component:BankDetailsComponent},
     {path: 'createaccount',component:CreateaccountComponent},
-    {path: 'create-user',component:CreateUserComponent}
+    {path: 'create-user',component:CreateUserComponent},
+    
     
     
   ]},
